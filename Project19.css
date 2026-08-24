@@ -1,0 +1,365 @@
+/* ================================
+   Global Styles
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+
+/* ================================
+   Main Dashboard
+================================ */
+
+.weather-dashboard {
+    width: 100%;
+    max-width: 650px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #dbe3ea;
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.dashboard-header {
+    padding: 25px 30px;
+
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-title {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 22px;
+}
+
+
+/* ================================
+   Search
+================================ */
+
+.search-container {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background-color: #ffffff;
+}
+
+.city-search {
+    flex: 1;
+
+    border: none;
+    outline: none;
+
+    padding: 13px 15px;
+
+    font-size: 15px;
+    color: #334155;
+}
+
+.city-search::placeholder {
+    color: #94a3b8;
+}
+
+.search-button {
+    width: 50px;
+    height: 45px;
+
+    border: none;
+
+    background-color: #f8fafc;
+
+    cursor: pointer;
+
+    font-size: 17px;
+
+    transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+    background-color: #e2e8f0;
+}
+
+
+/* ================================
+   Current Weather Section
+================================ */
+
+.current-weather {
+    padding: 30px;
+}
+
+
+/* City Name + Weather Icon */
+
+.location-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.current-weather-icon {
+    font-size: 34px;
+}
+
+
+/* ================================
+   Temperature
+================================ */
+
+.temperature-section {
+    text-align: center;
+
+    padding: 25px 0 30px;
+}
+
+.current-temperature {
+    font-size: 64px;
+    line-height: 1;
+
+    font-weight: 600;
+
+    margin-bottom: 12px;
+}
+
+.weather-condition {
+    font-size: 18px;
+
+    font-weight: 500;
+
+    margin-bottom: 7px;
+}
+
+.feels-like {
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+
+/* ================================
+   Weather Statistics
+================================ */
+
+.weather-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 45px;
+
+    padding-top: 5px;
+}
+
+.weather-stat {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 14px;
+}
+
+.stat-icon {
+    font-size: 17px;
+}
+
+.stat-value {
+    color: #475569;
+    font-weight: 500;
+}
+
+
+/* ================================
+   Forecast Section
+================================ */
+
+.forecast-section {
+    border-top: 1px solid #e2e8f0;
+
+    padding: 25px 30px 30px;
+}
+
+.forecast-title {
+    font-size: 14px;
+
+    letter-spacing: 1px;
+
+    font-weight: 700;
+
+    color: #475569;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   Forecast Container
+================================ */
+
+.forecast-container {
+    display: grid;
+
+    grid-template-columns: repeat(7, 1fr);
+
+    gap: 8px;
+}
+
+
+/* Individual Forecast Day */
+
+.forecast-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 10px 4px;
+
+    border-radius: 8px;
+
+    transition: background-color 0.2s ease;
+}
+
+.forecast-day:hover {
+    background-color: #f8fafc;
+}
+
+
+/* Day Name */
+
+.forecast-day-name {
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #64748b;
+}
+
+
+/* Forecast Icon */
+
+.forecast-icon {
+    font-size: 24px;
+}
+
+
+/* Forecast Temperature */
+
+.forecast-temperature {
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+/* ================================
+   Responsive Design
+================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .dashboard-header,
+    .current-weather,
+    .forecast-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .dashboard-title {
+        font-size: 21px;
+    }
+
+    .current-temperature {
+        font-size: 52px;
+    }
+
+    .weather-stats {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .forecast-container {
+        gap: 2px;
+    }
+
+    .forecast-icon {
+        font-size: 20px;
+    }
+
+    .forecast-temperature {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .weather-stats {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .forecast-day {
+        gap: 10px;
+    }
+
+    .forecast-day-name {
+        font-size: 10px;
+    }
+
+    .forecast-icon {
+        font-size: 18px;
+    }
+
+    .forecast-temperature {
+        font-size: 13px;
+    }
+
+}

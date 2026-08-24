@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Dashboard</title>
+
+    <link rel="stylesheet" href="Project19.css">
+</head>
+
+<body>
+
+    <main class="weather-dashboard">
+
+        <!-- Header -->
+        <header class="dashboard-header">
+
+            <h1 class="dashboard-title">
+                🌤️ Weather Dashboard
+            </h1>
+
+            <!-- City Search -->
+            <form class="search-container">
+
+                <input
+                    type="text"
+                    class="city-search"
+                    placeholder="Search city..."
+                    aria-label="Search city"
+                >
+
+                <button
+                    type="submit"
+                    class="search-button"
+                    aria-label="Search weather"
+                >
+                    🔎
+                </button>
+
+            </form>
+
+        </header>
+
+
+        <!-- Current Weather -->
+        <section class="current-weather">
+
+            <!-- City and Weather Icon -->
+            <div class="location-row">
+
+                <h2 class="city-name">
+                    Kanpur, India
+                </h2>
+
+                <span class="current-weather-icon">
+                    ☀️
+                </span>
+
+            </div>
+
+
+            <!-- Temperature Information -->
+            <div class="temperature-section">
+
+                <p class="current-temperature">
+                    29°C
+                </p>
+
+                <p class="weather-condition">
+                    Clear Sky
+                </p>
+
+                <p class="feels-like">
+                    Feels 31°C
+                </p>
+
+            </div>
+
+
+            <!-- Weather Statistics -->
+            <div class="weather-stats">
+
+                <div class="weather-stat">
+                    <span class="stat-icon">💧</span>
+                    <span class="stat-value" id="humidity-Stat">65%</span>
+                </div>
+
+                <div class="weather-stat">
+                    <span class="stat-icon">💨</span>
+                    <span class="stat-value" id="wind-Stat">12 km/h</span>
+                </div>
+
+                <div class="weather-stat">
+                    <span class="stat-icon">🌡️</span>
+                    <span class="stat-value" id="pressure-Stat">1012 hPa</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- 7 Day Forecast -->
+        <section class="forecast-section">
+
+            <h2 class="forecast-title">
+                7 DAY FORECAST
+            </h2>
+
+            <div class="forecast-container">
+
+                <!-- Monday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">MON</p>
+
+                    <span class="forecast-icon">☀️</span>
+
+                    <p class="forecast-temperature">32°</p>
+
+                </article>
+
+
+                <!-- Tuesday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">TUE</p>
+
+                    <span class="forecast-icon">🌤️</span>
+
+                    <p class="forecast-temperature">31°</p>
+
+                </article>
+
+
+                <!-- Wednesday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">WED</p>
+
+                    <span class="forecast-icon">🌧️</span>
+
+                    <p class="forecast-temperature">28°</p>
+
+                </article>
+
+
+                <!-- Thursday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">THU</p>
+
+                    <span class="forecast-icon">☀️</span>
+
+                    <p class="forecast-temperature">30°</p>
+
+                </article>
+
+
+                <!-- Friday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">FRI</p>
+
+                    <span class="forecast-icon">☀️</span>
+
+                    <p class="forecast-temperature">33°</p>
+
+                </article>
+
+
+                <!-- Saturday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">SAT</p>
+
+                    <span class="forecast-icon">🌧️</span>
+
+                    <p class="forecast-temperature">29°</p>
+
+                </article>
+
+
+                <!-- Sunday -->
+                <article class="forecast-day">
+
+                    <p class="forecast-day-name">SUN</p>
+
+                    <span class="forecast-icon">☀️</span>
+
+                    <p class="forecast-temperature">31°</p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+    
+    <script src="Project19.js"></script>
+</body>
+</html>
